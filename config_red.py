@@ -19,10 +19,15 @@ def conectar_wifi(lista_redes):
             print(".", end = "")
             time.sleep(1)
             timeout += 1
-            
+        
+        if wlan.isconnected():
+            print("\n✅ Conectado a:", red['ssid'])
             return True
+        else:
+            print(f"\n❌ No se pudo conectar a: {red['ssid']}")
     
-tiempo_rojo = 20
-tiempo_amarillo = 1
-tiempo_verde = 0
+    
+tiempo_rojo = 0.5
+tiempo_amarillo = 0.6
+tiempo_verde = 0.7
         
