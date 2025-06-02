@@ -1,0 +1,40 @@
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .semaforo {
+    background: #333;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .luz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #555;
+    box-shadow: 0 0 10px #000;
+    transition: background 0.5s, box-shadow 0.5s;
+  }
+  
+  .rojo.encendido {
+    background: red;
+    box-shadow: 0 0 30px red;
+  }
+  
+  .amarillo.encendido {
+    background: yellow;
+    box-shadow: 0 0 30px yellow;
+  }
+  
+  .verde.encendido {
+    background: limegreen;
+    box-shadow: 0 0 30px limegreen;
+  }
